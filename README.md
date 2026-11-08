@@ -131,7 +131,7 @@ SQLite 保存业务历史，不作为 LangGraph checkpoint；每次生成独立�
 
 正式测试以 OpenCode Go 的 `deepseek-v4.1-flash` 在相同的 50 个固定输入上执行 v1 和 v2；人工复核与自动评测独立保存。评审模型与生成模型相同，且未经人工校准；未评项不计为质量合格或不合格。完整报告与案例表随交付材料提供。
 
-![系统架构](docs/architecture/系统架构图.png)
+![系统架构](docs/architecture/序棠_系统架构图.png)
 
 ## 说明
 
