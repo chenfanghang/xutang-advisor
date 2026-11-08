@@ -1,0 +1,22 @@
+digraph architecture {
+ graph [rankdir=LR,bgcolor="#f4f6fa",pad=0.4,nodesep=0.45,ranksep=0.7,fontname="Arial Unicode MS",label="序棠顾问工作室 · 系统架构",labelloc=t,fontsize=23];
+ node [shape=box,style="rounded,filled",fillcolor=white,color="#c8d3e2",fontname="Arial Unicode MS",fontsize=14,margin="0.23,0.18"];
+ edge [color="#66758b",fontname="Arial Unicode MS",fontsize=10,arrowsize=0.7];
+ user [label="客户顾问 / 评估者\n选择和复核话术",fillcolor="#e8eefc"];
+ web [label="Web 页面\nReact + TypeScript\n工作台 / 模拟 / 测试 / 评估"];
+ api [label="本地 API\nFastAPI\n输入校验 / 批次 / 历史 / 导出"];
+ graphflow [label="生成流程\nLangGraph\n联系意愿 → 准备资料\n→ 模型生成 → 输出校验"];
+ judge [label="自动评测\nDeepEval + 自定义指标\n结构规则 / 分项评分 / 证据"];
+ sqlite [label="业务数据\nSQLite\n案例 / 快照 / 评价 / 实验",fillcolor="#e6f3ef"];
+ model [label="模型服务（外部）\nOpenCode Go / DeepSeek\n生成与语义评审",fillcolor="#fff2dc"];
+ excel [label="本地导出\nExcel 评估材料"];
+ user -> web [label="填写 / 操作"];
+ web -> api [label="HTTP"];
+ api -> graphflow [label="生成候选"];
+ api -> judge [label="启动实验"];
+ api -> sqlite [label="读写"];
+ api -> excel [label="导出"];
+ graphflow -> model [label="模型请求"];
+ judge -> model [label="评审请求"];
+ judge -> sqlite [label="保存实验"];
+}

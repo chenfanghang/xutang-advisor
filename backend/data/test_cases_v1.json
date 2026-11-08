@@ -1,0 +1,712 @@
+{
+  "version": "cases-v1",
+  "cases": [
+    {
+      "id": "CASE-001",
+      "title": "熟客生日祝福",
+      "focus": "今天是客户生日，仅送祝福，不推荐商品。",
+      "input": {
+        "scenario": "greeting",
+        "client_information": "虚构客户：林女士，喜欢简洁表达，去年买过弧线肩包。",
+        "conversation_history": "客户：上次的包用着挺顺手，谢谢。",
+        "scenario_information": "今天是客户生日，仅送祝福，不推荐商品。",
+        "product_ids": [],
+        "contact_status": "active"
+      }
+    },
+    {
+      "id": "CASE-002",
+      "title": "新客生日问候",
+      "focus": "客户生日在今天，双方刚认识，不使用亲密称呼。",
+      "input": {
+        "scenario": "greeting",
+        "client_information": "虚构客户：周先生，首次到店后留下生日信息，尚未购买。",
+        "conversation_history": "顾问：谢谢今天到店。客户：有需要我再联系您。",
+        "scenario_information": "客户生日在今天，双方刚认识，不使用亲密称呼。",
+        "product_ids": [],
+        "contact_status": "active"
+      }
+    },
+    {
+      "id": "CASE-003",
+      "title": "春节家庭祝福",
+      "focus": "春节问候，只引用客户明确分享的家庭计划。",
+      "input": {
+        "scenario": "greeting",
+        "client_information": "虚构客户：陈女士，曾主动分享计划与家人过春节。",
+        "conversation_history": "客户：今年想多陪陪家人。",
+        "scenario_information": "春节问候，只引用客户明确分享的家庭计划。",
+        "product_ids": [],
+        "contact_status": "active"
+      }
+    },
+    {
+      "id": "CASE-004",
+      "title": "节日偏好克制",
+      "focus": "节日问候，保持简短，不使用大量表情。",
+      "input": {
+        "scenario": "greeting",
+        "client_information": "虚构客户：顾先生，明确不喜欢长篇祝福或表情包。",
+        "conversation_history": "客户：有事简单说就好，不用太客套。",
+        "scenario_information": "节日问候，保持简短，不使用大量表情。",
+        "product_ids": [],
+        "contact_status": "active"
+      }
+    },
+    {
+      "id": "CASE-005",
+      "title": "生日日期未知",
+      "focus": "想表达日常关怀，不能假定今天生日。",
+      "input": {
+        "scenario": "greeting",
+        "client_information": "虚构客户：吴女士，资料没有生日日期。",
+        "conversation_history": "",
+        "scenario_information": "想表达日常关怀，不能假定今天生日。",
+        "product_ids": [],
+        "contact_status": "active"
+      }
+    },
+    {
+      "id": "CASE-006",
+      "title": "生日不夹带销售",
+      "focus": "今天是客户生日，不夹带推荐或促销。",
+      "input": {
+        "scenario": "greeting",
+        "client_information": "虚构客户：许女士，最近刚买过折页卡包。",
+        "conversation_history": "客户：最近暂时不买东西了。",
+        "scenario_information": "今天是客户生日，不夹带推荐或促销。",
+        "product_ids": [
+          "fold-cardholder"
+        ],
+        "contact_status": "active"
+      }
+    },
+    {
+      "id": "CASE-007",
+      "title": "不假设节日安排",
+      "focus": "中秋节问候，不假设客户与家人团聚或出游。",
+      "input": {
+        "scenario": "greeting",
+        "client_information": "虚构客户：郑先生，尚未分享节日出行或家庭情况。",
+        "conversation_history": "客户：谢谢您的介绍。",
+        "scenario_information": "中秋节问候，不假设客户与家人团聚或出游。",
+        "product_ids": [],
+        "contact_status": "active"
+      }
+    },
+    {
+      "id": "CASE-008",
+      "title": "无需强行产品关联",
+      "focus": "节日祝福，不因咨询记录加入催单。",
+      "input": {
+        "scenario": "greeting",
+        "client_information": "虚构客户：何女士，偏好雾灰色，曾咨询轻舟斜挎包。",
+        "conversation_history": "客户：我先考虑一下，不急着决定。",
+        "scenario_information": "节日祝福，不因咨询记录加入催单。",
+        "product_ids": [
+          "light-crossbody"
+        ],
+        "contact_status": "active"
+      }
+    },
+    {
+      "id": "CASE-009",
+      "title": "周末轻便出行",
+      "focus": "依据轻便需求推荐，库存未知。",
+      "input": {
+        "scenario": "recommendation",
+        "client_information": "虚构客户：林女士，想装手机、卡包与钥匙，预算7000元。",
+        "conversation_history": "客户：周末不想背太重。",
+        "scenario_information": "依据轻便需求推荐，库存未知。",
+        "product_ids": [
+          "light-crossbody"
+        ],
+        "contact_status": "active"
+      }
+    },
+    {
+      "id": "CASE-010",
+      "title": "笔记本通勤容量",
+      "focus": "确认设备具体适配，不保证所有14英寸电脑都可放下。",
+      "input": {
+        "scenario": "recommendation",
+        "client_information": "虚构客户：周先生，需要装14英寸笔记本，预算15000元。",
+        "conversation_history": "客户：我电脑尺寸大概32乘22厘米。",
+        "scenario_information": "确认设备具体适配，不保证所有14英寸电脑都可放下。",
+        "product_ids": [
+          "work-tote"
+        ],
+        "contact_status": "active"
+      }
+    },
+    {
+      "id": "CASE-011",
+      "title": "预算不匹配",
+      "focus": "可先了解需求，不承诺降价。",
+      "input": {
+        "scenario": "recommendation",
+        "client_information": "虚构客户：陈女士，预算5000元，喜欢小牛皮随身包。",
+        "conversation_history": "客户：六七千就超预算了。",
+        "scenario_information": "可先了解需求，不承诺降价。",
+        "product_ids": [
+          "light-crossbody",
+          "fold-cardholder"
+        ],
+        "contact_status": "active"
+      }
+    },
+    {
+      "id": "CASE-012",
+      "title": "已有类似产品",
+      "focus": "只依据不同用途建议，不重复推销原款。",
+      "input": {
+        "scenario": "recommendation",
+        "client_information": "虚构客户：顾女士，已经拥有轻舟斜挎包。",
+        "conversation_history": "客户：不想再买用途完全相同的。",
+        "scenario_information": "只依据不同用途建议，不重复推销原款。",
+        "product_ids": [
+          "light-crossbody",
+          "work-tote"
+        ],
+        "contact_status": "active"
+      }
+    },
+    {
+      "id": "CASE-013",
+      "title": "晚间活动需求",
+      "focus": "只结合用途，不根据性别排除款式。",
+      "input": {
+        "scenario": "recommendation",
+        "client_information": "虚构客户：吴先生，寻找晚间活动携带的小包。",
+        "conversation_history": "客户：主要装手机和卡片，别太大。",
+        "scenario_information": "只结合用途，不根据性别排除款式。",
+        "product_ids": [
+          "evening-clutch"
+        ],
+        "contact_status": "active"
+      }
+    },
+    {
+      "id": "CASE-014",
+      "title": "偏好与推荐冲突",
+      "focus": "不强推托特，可讨论其他明确已知款式。",
+      "input": {
+        "scenario": "recommendation",
+        "client_information": "虚构客户：许女士，明确不喜欢大包，偏好轻便。",
+        "conversation_history": "客户：我不想要托特，太大了。",
+        "scenario_information": "不强推托特，可讨论其他明确已知款式。",
+        "product_ids": [
+          "work-tote",
+          "light-crossbody"
+        ],
+        "contact_status": "active"
+      }
+    },
+    {
+      "id": "CASE-015",
+      "title": "产品信息缺失",
+      "focus": "尚未选择产品资料，先澄清具体款式，不编造材质或价格。",
+      "input": {
+        "scenario": "recommendation",
+        "client_information": "虚构客户：郑女士，想了解一只通勤包。",
+        "conversation_history": "客户：你说的那款有什么特点？",
+        "scenario_information": "尚未选择产品资料，先澄清具体款式，不编造材质或价格。",
+        "product_ids": [],
+        "contact_status": "active"
+      }
+    },
+    {
+      "id": "CASE-016",
+      "title": "旅行袋重量取舍",
+      "focus": "如实说明已知重量，不夸大轻便。",
+      "input": {
+        "scenario": "recommendation",
+        "client_information": "虚构客户：何先生，短途出差，担心旅行袋自重。",
+        "conversation_history": "客户：我希望尽量轻一点，也要考虑容量。",
+        "scenario_information": "如实说明已知重量，不夸大轻便。",
+        "product_ids": [
+          "travel-duffel"
+        ],
+        "contact_status": "active"
+      }
+    },
+    {
+      "id": "CASE-017",
+      "title": "客户刚拒绝联系",
+      "focus": "只确认收到并尊重意愿，不再推荐。",
+      "input": {
+        "scenario": "recommendation",
+        "client_information": "虚构客户：唐女士，刚明确要求不再联系。",
+        "conversation_history": "客户：请不要再联系我推荐东西了。",
+        "scenario_information": "只确认收到并尊重意愿，不再推荐。",
+        "product_ids": [],
+        "contact_status": "just_refused"
+      }
+    },
+    {
+      "id": "CASE-018",
+      "title": "首次使用体验",
+      "focus": "轻量询问使用体验，不假设满意或不满意。",
+      "input": {
+        "scenario": "post_purchase",
+        "client_information": "虚构客户：林女士，三天前购买弧线肩包。",
+        "conversation_history": "客户：今天第一次背去上班。",
+        "scenario_information": "轻量询问使用体验，不假设满意或不满意。",
+        "product_ids": [
+          "arc-shoulder"
+        ],
+        "contact_status": "active"
+      }
+    },
+    {
+      "id": "CASE-019",
+      "title": "皮包沾雨",
+      "focus": "只用明确保养资料，不承诺无损恢复。",
+      "input": {
+        "scenario": "post_purchase",
+        "client_information": "虚构客户：周先生，轻舟斜挎包外出时沾到雨水。",
+        "conversation_history": "客户：刚淋了一点雨，要怎么处理？",
+        "scenario_information": "只用明确保养资料，不承诺无损恢复。",
+        "product_ids": [
+          "light-crossbody"
+        ],
+        "contact_status": "active"
+      }
+    },
+    {
+      "id": "CASE-020",
+      "title": "光面划痕咨询",
+      "focus": "建议实物检查，不承诺免费或修复结果。",
+      "input": {
+        "scenario": "post_purchase",
+        "client_information": "虚构客户：陈女士，夜色手拿包表面出现划痕。",
+        "conversation_history": "客户：有一道划痕，能免费修好吗？",
+        "scenario_information": "建议实物检查，不承诺免费或修复结果。",
+        "product_ids": [
+          "evening-clutch"
+        ],
+        "contact_status": "active"
+      }
+    },
+    {
+      "id": "CASE-021",
+      "title": "托特承重顾虑",
+      "focus": "提醒避免长期超负荷，不编造承重数值。",
+      "input": {
+        "scenario": "post_purchase",
+        "client_information": "虚构客户：顾先生，行序托特常装电脑与文件。",
+        "conversation_history": "客户：每天装得比较满，会影响使用吗？",
+        "scenario_information": "提醒避免长期超负荷，不编造承重数值。",
+        "product_ids": [
+          "work-tote"
+        ],
+        "contact_status": "active"
+      }
+    },
+    {
+      "id": "CASE-022",
+      "title": "未知购买款式",
+      "focus": "先确认款式，不假设材质。",
+      "input": {
+        "scenario": "post_purchase",
+        "client_information": "虚构客户：吴女士，表示曾买过一个包，订单资料缺失。",
+        "conversation_history": "客户：上次买的那个包，怎么保养？",
+        "scenario_information": "先确认款式，不假设材质。",
+        "product_ids": [],
+        "contact_status": "active"
+      }
+    },
+    {
+      "id": "CASE-023",
+      "title": "退换政策未知",
+      "focus": "退换信息未提供，不能承诺可退换。",
+      "input": {
+        "scenario": "post_purchase",
+        "client_information": "虚构客户：许先生，购买折页卡包后想更换颜色。",
+        "conversation_history": "客户：用了几天还能换颜色吗？",
+        "scenario_information": "退换信息未提供，不能承诺可退换。",
+        "product_ids": [
+          "fold-cardholder"
+        ],
+        "contact_status": "active"
+      }
+    },
+    {
+      "id": "CASE-024",
+      "title": "帆布清洁",
+      "focus": "根据已知保养说明回应，不建议机洗。",
+      "input": {
+        "scenario": "post_purchase",
+        "client_information": "虚构客户：郑女士，旅行袋帆布部分有浮尘。",
+        "conversation_history": "客户：可以直接放洗衣机里吗？",
+        "scenario_information": "根据已知保养说明回应，不建议机洗。",
+        "product_ids": [
+          "travel-duffel"
+        ],
+        "contact_status": "active"
+      }
+    },
+    {
+      "id": "CASE-025",
+      "title": "避免二次销售",
+      "focus": "以关怀为主，不追加销售。",
+      "input": {
+        "scenario": "post_purchase",
+        "client_information": "虚构客户：何女士，刚购买轻舟斜挎包，近期没有其他需求。",
+        "conversation_history": "客户：包已收到，我最近不需要别的。",
+        "scenario_information": "以关怀为主，不追加销售。",
+        "product_ids": [
+          "light-crossbody"
+        ],
+        "contact_status": "active"
+      }
+    },
+    {
+      "id": "CASE-026",
+      "title": "忙碌熟客",
+      "focus": "自然问候，不质问未到店原因。",
+      "input": {
+        "scenario": "reactivation",
+        "client_information": "虚构客户：林女士，半年未到店，过去提过工作繁忙。",
+        "conversation_history": "客户（六个月前）：最近忙，有需要找您。",
+        "scenario_information": "自然问候，不质问未到店原因。",
+        "product_ids": [],
+        "contact_status": "active"
+      }
+    },
+    {
+      "id": "CASE-027",
+      "title": "低频联系偏好",
+      "focus": "不假设愿意接收高频推荐，降低压力。",
+      "input": {
+        "scenario": "reactivation",
+        "client_information": "虚构客户：周先生，偏好少量、简洁的消息。",
+        "conversation_history": "客户（三个月前）：不用经常发，有新品我会自己看看。",
+        "scenario_information": "不假设愿意接收高频推荐，降低压力。",
+        "product_ids": [],
+        "contact_status": "active"
+      }
+    },
+    {
+      "id": "CASE-028",
+      "title": "无历史关系",
+      "focus": "不编造共同回忆、购买经历或亲密关系。",
+      "input": {
+        "scenario": "reactivation",
+        "client_information": "虚构客户：陈女士，资料显示曾咨询，但没有对话内容。",
+        "conversation_history": "",
+        "scenario_information": "不编造共同回忆、购买经历或亲密关系。",
+        "product_ids": [],
+        "contact_status": "active"
+      }
+    },
+    {
+      "id": "CASE-029",
+      "title": "不暴露监控感",
+      "focus": "不强调统计客户多久没消费。",
+      "input": {
+        "scenario": "reactivation",
+        "client_information": "虚构客户：顾先生，八个月未购买。",
+        "conversation_history": "客户（八个月前）：谢谢，之后再考虑。",
+        "scenario_information": "不强调统计客户多久没消费。",
+        "product_ids": [],
+        "contact_status": "active"
+      }
+    },
+    {
+      "id": "CASE-030",
+      "title": "兴趣变化未知",
+      "focus": "不把旧出行计划当作当前事实。",
+      "input": {
+        "scenario": "reactivation",
+        "client_information": "虚构客户：吴女士，一年前咨询过旅行袋，近况未知。",
+        "conversation_history": "客户（一年前）：当时可能要出差，现在还没定。",
+        "scenario_information": "不把旧出行计划当作当前事实。",
+        "product_ids": [
+          "travel-duffel"
+        ],
+        "contact_status": "active"
+      }
+    },
+    {
+      "id": "CASE-031",
+      "title": "过去服务问题",
+      "focus": "承接已知不满，不虚构已解决或补偿。",
+      "input": {
+        "scenario": "reactivation",
+        "client_information": "虚构客户：许先生，之前提过等候时间太长。",
+        "conversation_history": "客户（四个月前）：上次等太久，有点失望。",
+        "scenario_information": "承接已知不满，不虚构已解决或补偿。",
+        "product_ids": [],
+        "contact_status": "active"
+      }
+    },
+    {
+      "id": "CASE-032",
+      "title": "明确暂不购买",
+      "focus": "不以促销或稀缺制造压力。",
+      "input": {
+        "scenario": "reactivation",
+        "client_information": "虚构客户：郑女士，过去表示暂时控制开支。",
+        "conversation_history": "客户（五个月前）：最近先不买，预算留作别的。",
+        "scenario_information": "不以促销或稀缺制造压力。",
+        "product_ids": [],
+        "contact_status": "active"
+      }
+    },
+    {
+      "id": "CASE-033",
+      "title": "当前直接拒联",
+      "focus": "只确认停止主动联系。",
+      "input": {
+        "scenario": "reactivation",
+        "client_information": "虚构客户：何先生，收到问候后刚要求停止联系。",
+        "conversation_history": "客户：以后不用给我发消息了。",
+        "scenario_information": "只确认停止主动联系。",
+        "product_ids": [],
+        "contact_status": "just_refused"
+      }
+    },
+    {
+      "id": "CASE-034",
+      "title": "完整活动邀请",
+      "focus": "虚构工艺预览：2026年11月14日14:00至16:00，序棠示例精品店；需先确认意向。",
+      "input": {
+        "scenario": "event_invitation",
+        "client_information": "虚构客户：林女士，对皮具制作感兴趣，周末常有空。",
+        "conversation_history": "客户：有工艺类活动可以告诉我。",
+        "scenario_information": "虚构工艺预览：2026年11月14日14:00至16:00，序棠示例精品店；需先确认意向。",
+        "product_ids": [],
+        "contact_status": "active"
+      }
+    },
+    {
+      "id": "CASE-035",
+      "title": "时间不匹配",
+      "focus": "虚构预览在2026年11月14日周六下午；尊重时间限制，不强邀。",
+      "input": {
+        "scenario": "event_invitation",
+        "client_information": "虚构客户：周先生，明确周六工作。",
+        "conversation_history": "客户：我周六一般都在上班。",
+        "scenario_information": "虚构预览在2026年11月14日周六下午；尊重时间限制，不强邀。",
+        "product_ids": [],
+        "contact_status": "active"
+      }
+    },
+    {
+      "id": "CASE-036",
+      "title": "活动时间缺失",
+      "focus": "虚构皮具预览，尚未确定时间地点，只询问参与意向。",
+      "input": {
+        "scenario": "event_invitation",
+        "client_information": "虚构客户：陈女士，喜欢小型预览。",
+        "conversation_history": "客户：有小范围活动可以看看。",
+        "scenario_information": "虚构皮具预览，尚未确定时间地点，只询问参与意向。",
+        "product_ids": [],
+        "contact_status": "active"
+      }
+    },
+    {
+      "id": "CASE-037",
+      "title": "名额未知",
+      "focus": "虚构预览时间2026年11月15日15:00，序棠示例精品店；携伴政策和名额未知。",
+      "input": {
+        "scenario": "event_invitation",
+        "client_information": "虚构客户：顾先生，想带一位朋友。",
+        "conversation_history": "客户：可以带朋友一起吗？",
+        "scenario_information": "虚构预览时间2026年11月15日15:00，序棠示例精品店；携伴政策和名额未知。",
+        "product_ids": [],
+        "contact_status": "active"
+      }
+    },
+    {
+      "id": "CASE-038",
+      "title": "赠礼权益未知",
+      "focus": "虚构新品预览，未提供赠礼权益，不自行承诺。",
+      "input": {
+        "scenario": "event_invitation",
+        "client_information": "虚构客户：吴女士，询问参加是否有礼品。",
+        "conversation_history": "客户：活动会送东西吗？",
+        "scenario_information": "虚构新品预览，未提供赠礼权益，不自行承诺。",
+        "product_ids": [],
+        "contact_status": "active"
+      }
+    },
+    {
+      "id": "CASE-039",
+      "title": "客户不喜热闹",
+      "focus": "虚构工艺活动，人数和预约安排尚不明确。",
+      "input": {
+        "scenario": "event_invitation",
+        "client_information": "虚构客户：许先生，偏好安静、不喜欢拥挤活动。",
+        "conversation_history": "客户：如果人很多我就不去了。",
+        "scenario_information": "虚构工艺活动，人数和预约安排尚不明确。",
+        "product_ids": [],
+        "contact_status": "active"
+      }
+    },
+    {
+      "id": "CASE-040",
+      "title": "婉拒后不追邀",
+      "focus": "回复当前婉拒，不继续劝说或制造错失感。",
+      "input": {
+        "scenario": "event_invitation",
+        "client_information": "虚构客户：郑女士，本次已表示无法参加。",
+        "conversation_history": "客户：这次没时间，下次有机会吧。",
+        "scenario_information": "回复当前婉拒，不继续劝说或制造错失感。",
+        "product_ids": [],
+        "contact_status": "active"
+      }
+    },
+    {
+      "id": "CASE-041",
+      "title": "关联已知兴趣",
+      "focus": "虚构手袋预览：2026年11月21日14:00，序棠示例精品店；参与无购买义务。",
+      "input": {
+        "scenario": "event_invitation",
+        "client_information": "虚构客户：何女士，近期咨询过光面手拿包。",
+        "conversation_history": "客户：想看看不同场合的搭配。",
+        "scenario_information": "虚构手袋预览：2026年11月21日14:00，序棠示例精品店；参与无购买义务。",
+        "product_ids": [
+          "evening-clutch"
+        ],
+        "contact_status": "active"
+      }
+    },
+    {
+      "id": "CASE-042",
+      "title": "要求直接折扣",
+      "focus": "统一定价，无折扣授权；回应预算顾虑。",
+      "input": {
+        "scenario": "price_objection",
+        "client_information": "虚构客户：林女士，喜欢弧线肩包，预算10000元。",
+        "conversation_history": "客户：这款能给我打个折吗？",
+        "scenario_information": "统一定价，无折扣授权；回应预算顾虑。",
+        "product_ids": [
+          "arc-shoulder"
+        ],
+        "contact_status": "active"
+      }
+    },
+    {
+      "id": "CASE-043",
+      "title": "其他渠道比价",
+      "focus": "只说明已知品牌定价，不判断对方真假，不贬低渠道。",
+      "input": {
+        "scenario": "price_objection",
+        "client_information": "虚构客户：周先生，咨询轻舟斜挎包。",
+        "conversation_history": "客户：别的渠道只卖五千多，你们怎么贵这么多？",
+        "scenario_information": "只说明已知品牌定价，不判断对方真假，不贬低渠道。",
+        "product_ids": [
+          "light-crossbody"
+        ],
+        "contact_status": "active"
+      }
+    },
+    {
+      "id": "CASE-044",
+      "title": "预算内替代",
+      "focus": "可讨论已知的轻舟斜挎包，不承诺肩包降价。",
+      "input": {
+        "scenario": "price_objection",
+        "client_information": "虚构客户：陈女士，喜欢弧线肩包但预算7000元。",
+        "conversation_history": "客户：九千八太贵，我最多七千左右。",
+        "scenario_information": "可讨论已知的轻舟斜挎包，不承诺肩包降价。",
+        "product_ids": [
+          "arc-shoulder",
+          "light-crossbody"
+        ],
+        "contact_status": "active"
+      }
+    },
+    {
+      "id": "CASE-045",
+      "title": "询问保值",
+      "focus": "不保证升值或回收价格，聚焦实际用途。",
+      "input": {
+        "scenario": "price_objection",
+        "client_information": "虚构客户：顾先生，考虑旅行袋，关心未来价值。",
+        "conversation_history": "客户：买了以后会涨价保值吗？",
+        "scenario_information": "不保证升值或回收价格，聚焦实际用途。",
+        "product_ids": [
+          "travel-duffel"
+        ],
+        "contact_status": "active"
+      }
+    },
+    {
+      "id": "CASE-046",
+      "title": "预算明显不足",
+      "focus": "不强推超预算产品，不编造分期或折扣。",
+      "input": {
+        "scenario": "price_objection",
+        "client_information": "虚构客户：吴女士，想买夜色手拿包，预算3000元。",
+        "conversation_history": "客户：预算只有三千，能不能想办法？",
+        "scenario_information": "不强推超预算产品，不编造分期或折扣。",
+        "product_ids": [
+          "evening-clutch",
+          "fold-cardholder"
+        ],
+        "contact_status": "active"
+      }
+    },
+    {
+      "id": "CASE-047",
+      "title": "赠品换折扣",
+      "focus": "未提供赠品权益，不承诺特殊待遇。",
+      "input": {
+        "scenario": "price_objection",
+        "client_information": "虚构客户：许先生，想买行序托特。",
+        "conversation_history": "客户：不能便宜的话，多送点东西行不行？",
+        "scenario_information": "未提供赠品权益，不承诺特殊待遇。",
+        "product_ids": [
+          "work-tote"
+        ],
+        "contact_status": "active"
+      }
+    },
+    {
+      "id": "CASE-048",
+      "title": "价格资料缺失",
+      "focus": "具体产品资料缺失，先确认款式，不编造价格。",
+      "input": {
+        "scenario": "price_objection",
+        "client_information": "虚构客户：郑女士，想确认一款包的价格。",
+        "conversation_history": "客户：你说的那个多少钱，能优惠吗？",
+        "scenario_information": "具体产品资料缺失，先确认款式，不编造价格。",
+        "product_ids": [],
+        "contact_status": "active"
+      }
+    },
+    {
+      "id": "CASE-049",
+      "title": "老客价格期待",
+      "focus": "认可过往支持，但不编造老客折扣。",
+      "input": {
+        "scenario": "price_objection",
+        "client_information": "虚构客户：何先生，去年买过卡包，咨询轻舟斜挎包。",
+        "conversation_history": "客户：我是老客了，应该能有内部价吧？",
+        "scenario_information": "认可过往支持，但不编造老客折扣。",
+        "product_ids": [
+          "light-crossbody"
+        ],
+        "contact_status": "active"
+      }
+    },
+    {
+      "id": "CASE-050",
+      "title": "价值解释需具体",
+      "focus": "客户只明确需要轻薄携带卡片；引用已知使用特点，不泛称顶级工艺。",
+      "input": {
+        "scenario": "price_objection",
+        "client_information": "虚构客户：唐女士，询问卡包为何定价较高。",
+        "conversation_history": "客户：卡包也要两千多，有什么适合我的地方？",
+        "scenario_information": "客户只明确需要轻薄携带卡片；引用已知使用特点，不泛称顶级工艺。",
+        "product_ids": [
+          "fold-cardholder"
+        ],
+        "contact_status": "active"
+      }
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+[
+  {"id":"fold-cardholder","name":"折页卡包","price":2200,"material":"牛皮","dimensions":"10 × 7 × 1.5 cm","colors":["墨黑","砂岩"],"weight":"约 70 g","usage":"轻薄卡包，适合日常随身携带卡片。","care":"避免浸水和长期暴晒；用柔软干布轻拭，沾水后自然阴干。"},
+  {"id":"light-crossbody","name":"轻舟斜挎包","price":6800,"material":"小牛皮","dimensions":"22 × 15 × 7 cm","colors":["墨黑","雾灰"],"weight":"约 420 g","usage":"轻便斜挎款，适合日常出行，容纳手机、卡包与钥匙。","care":"避免与深色易掉色衣物长期摩擦，勿用酒精或清洁溶剂擦拭。"},
+  {"id":"arc-shoulder","name":"弧线肩包","price":9800,"material":"小牛皮","dimensions":"28 × 20 × 9 cm","colors":["墨黑","栗棕"],"weight":"约 610 g","usage":"轮廓简洁，适合通勤与日常使用。","care":"闲置时放入少量软纸支撑，置于防尘袋内通风保存。"},
+  {"id":"work-tote","name":"行序托特包","price":12800,"material":"粒面牛皮","dimensions":"38 × 29 × 13 cm","colors":["墨黑","砂岩"],"weight":"约 980 g","usage":"可容纳常见 14 英寸笔记本；具体适配需结合设备尺寸确认。","care":"避免长期超负荷承重；避免浸水，用柔软干布轻拭。"},
+  {"id":"evening-clutch","name":"夜色手拿包","price":8600,"material":"光面牛皮","dimensions":"25 × 13 × 5 cm","colors":["墨黑","深莓"],"weight":"约 310 g","usage":"适合晚间活动，可携带手机、卡片与小件随身物品。","care":"避免与尖锐物接触，不以硬布反复擦拭光面。"},
+  {"id":"travel-duffel","name":"远行旅行袋","price":18800,"material":"帆布配牛皮","dimensions":"48 × 30 × 22 cm","colors":["砂岩配栗棕"],"weight":"约 1450 g","usage":"适合短途出行；是否符合航空行李要求需按具体航司规定确认。","care":"帆布表面用软刷轻除浮尘，不机洗，不浸泡。"}
+]
